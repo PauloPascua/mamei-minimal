@@ -1784,7 +1784,7 @@ $socialIconFontStack: 'icons';
   @include at-query($min, $medium) {
     input {
       max-width: 250px;
-    }   
+    }
   }
 
   .text-center input {
@@ -1833,6 +1833,11 @@ $socialIconFontStack: 'icons';
     padding: 0 10px;
   }
 
+}
+
+/*================ Module | Footer ================*/
+.copyright {
+  margin-top: 1.5em;
 }
 
 /*================ Module | Notes and Form Feedback ================*/
@@ -2204,6 +2209,14 @@ $socialIconFontStack: 'icons';
   position: relative;
 }
 
+.copyright-logo__image-wrapper {
+  display: block;
+  max-width: 100%;
+  position: relative;
+  margin: 0 auto;
+  padding-top: 3em;
+}
+
 .logo__image {
   width: 100%;
   display: block;
@@ -2288,7 +2301,7 @@ $socialIconFontStack: 'icons';
   z-index: 20;
   font-size: 0.85em;
   box-shadow: 0px 1px 1px rgba(0,0,0,0.1);
-                      
+
   .supports-no-touch .site-nav--has-dropdown:hover &,
   .site-nav--has-dropdown.nav-hover &,
   .nav-focus + &,
