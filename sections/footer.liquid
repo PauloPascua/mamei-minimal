@@ -113,11 +113,11 @@
 
   <hr class="hr--small hr--clear">
 
-  <div class="grid">
+  {% comment %} <div class="grid">
     <div class="grid__item text-center">
       <p class="site-footer__links">{{ 'layout.footer.copyright' | t }} &copy; {{ 'now' | date: "%Y" }}, {{ shop.name | link_to: '/' }}.</p>
     </div>
-  </div>
+  </div> {% endcomment %}
 
   {% if section.settings.show_methods_of_payment %}
     {% unless shop.enabled_payment_types == empty %}
@@ -143,6 +143,14 @@
 </div>
 
 </footer>
+
+{% comment %} <div class="wrapper">
+  <div class="grid">
+    <div class="grid__item text-center">
+      <p class="site-footer__links">{{ 'layout.footer.copyright' | t }} &copy; {{ 'now' | date: "%Y" }}, {{ shop.name | link_to: '/' }}.</p>
+    </div>
+  </div>
+</div> {% endcomment %}
 
 {% schema %}
   {
