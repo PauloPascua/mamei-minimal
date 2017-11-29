@@ -19,9 +19,9 @@
     "color_footer_social_link": "#3b3b3b",
     "type_base_family": "'Avant Garde', Avantgarde, 'Century Gothic', CenturyGothic, 'AppleGothic', sans-serif",
     "type_base_size": "16px",
-    "type_header_family": "'Cormorant Garamond', serif",
+    "type_header_family": "Google_Josefin+Sans_400_sans",
     "type_header_size": "32px",
-    "type_accent_family": "Google_Montserrat_400_sans",
+    "type_accent_family": "Google_Josefin+Sans_400_sans",
     "type_accent_size": "16px",
     "type_accent_transform": true,
     "type_accent_spacing": false,
@@ -266,6 +266,13 @@
           "newsletter_button_text": "Notify me",
           "show_share_buttons": false,
           "social_message": "Spread the word"
+        }
+      },
+      "copyright": {
+        "type": "copyright",
+        "settings": {
+          "logo": "shopify:\/\/shop_images\/logo-cropped.png",
+          "logo_max_width": "200"
         }
       }
     },
