@@ -843,6 +843,11 @@ h6 {
 .h5 { @extend h5; }
 .h6 { @extend h6; }
 
+{% comment %} Override heading font weight {% endcomment %}
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  font-weight: normal;
+}
+
 /*================ Footer ================*/
 .site-footer {
   p,
@@ -864,7 +869,7 @@ h6 {
 @if ($colorBody == $colorFooterBg) or ($colorFooterBg == rgba(0,0,0,0))  {
   .main-content {
     padding-bottom: 0;
-    
+
     &:after {
       content: '';
       display: block;
@@ -1474,7 +1479,7 @@ $badgeSize: 60px;
   .input-group {
     display: block;
   }
-  
+
   .input-group-field {
     margin-bottom: 10px;
   }
