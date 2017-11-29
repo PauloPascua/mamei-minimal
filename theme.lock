@@ -8,7 +8,7 @@ assets/ico-select.svg.liquid:
 assets/icons.eot:
   development: 2017-11-18T15:56:09+08:00   2bfe8cff1d4976af629171b5f984c2a9
 assets/icons.json:
-  development: 2017-11-18T15:56:09+08:00   5958c159d2e41b9af0b34f261899b395
+  development: 2017-11-29T23:58:09+08:00   5958c159d2e41b9af0b34f261899b395
 assets/icons.svg:
   development: 2017-11-18T15:56:09+08:00   0f8e7e9b9ff62318f787601d71582503
 assets/icons.ttf:
@@ -21,38 +21,100 @@ assets/lazysizes.min.js:
   development: 2017-11-18T15:56:09+08:00   8a017cd822f4299a72a0872b07105cf9
 assets/password-page-background.jpg:
   development: 2017-11-18T15:56:09+08:00   4d5821272f875e5c11dd3a8c8e1d6133
+assets/renner-black-webfont.woff:
+  development: 2017-11-29T23:57:19+08:00   f521cf82c5413ee10f1442f0d815aa3a
+assets/renner-black-webfont.woff2:
+  development: 2017-11-29T23:57:58+08:00   d19730bd29143e042b3d14e74c2678e9
+assets/renner-blackitalic-webfont.ttf:
+  development: 2017-11-29T23:58:10+08:00   edcd00187ae96f641f42e92248ef1f0c
+assets/renner-blackitalic-webfont.woff:
+  development: 2017-11-29T23:57:19+08:00   9b738f219e447c36a21b5cd74606ec63
+assets/renner-blackitalic-webfont.woff2:
+  development: 2017-11-29T23:57:41+08:00   6bf81b8f1605aafb69f41b41e6883f6e
+assets/renner-bold-webfont.ttf:
+  development: 2017-11-29T23:57:50+08:00   0cd70b88246ac566d05daaa8c0d56b13
+assets/renner-bold-webfont.woff:
+  development: 2017-11-29T23:58:19+08:00   1c8c71915cdc9acce11d65425738e5ad
+assets/renner-bold-webfont.woff2:
+  development: 2017-11-29T23:57:37+08:00   e4bdd3d403db7849fd391da8ed4a0594
+assets/renner-bolditalic-webfont.ttf:
+  development: 2017-11-29T23:57:30+08:00   f4171db17fcd3913f67826766a1e9e44
+assets/renner-bolditalic-webfont.woff:
+  development: 2017-11-29T23:57:23+08:00   cdb9c4eb1938ef3ec96704e08ef72b45
+assets/renner-bolditalic-webfont.woff2:
+  development: 2017-11-29T23:58:01+08:00   2d3fcfbf1bfc5549db0e95e705caf1aa
+assets/renner-book-webfont.woff:
+  development: 2017-11-29T23:57:39+08:00   3906cf370589e4616640fe5128baa104
+assets/renner-book-webfont.woff2:
+  development: 2017-11-29T23:57:28+08:00   ecb1798898b37a1dbcbd3cce73dada4d
+assets/renner-bookitalic-webfont.ttf:
+  development: 2017-11-29T23:57:56+08:00   f22973f429be65b569748753897a2c39
+assets/renner-bookitalic-webfont.woff:
+  development: 2017-11-29T23:57:29+08:00   4f5ac4d3bfe33a39e21513b642d8e117
+assets/renner-bookitalic-webfont.woff2:
+  development: 2017-11-29T23:57:31+08:00   3969ceca663076ec3756697328b66087
+assets/renner-light-webfont.woff:
+  development: 2017-11-29T23:57:26+08:00   841bdf2d5513a65d2d5497d3055d0243
+assets/renner-light-webfont.woff2:
+  development: 2017-11-29T23:58:18+08:00   ae03b99f2b85f4a4d7f0fae514cb6411
+assets/renner-lightitalic-webfont.ttf:
+  development: 2017-11-29T23:58:00+08:00   dda1fbbef5ba6ae4226bc3a9bc88d099
+assets/renner-lightitalic-webfont.woff:
+  development: 2017-11-29T23:57:51+08:00   3008bc9373b94f526e89f2a0a8040d15
+assets/renner-lightitalic-webfont.woff2:
+  development: 2017-11-29T23:57:18+08:00   be754cabe5bc6b378ba041608ecf406c
+assets/renner-medium-webfont.woff:
+  development: 2017-11-29T23:58:04+08:00   e33cc32a73d6cad821df74cee44625e4
+assets/renner-medium-webfont.woff2:
+  development: 2017-11-29T23:57:17+08:00   772f5deec4f4356f76b9d450d1698cbe
+assets/renner-mediumitalic-webfont.ttf:
+  development: 2017-11-29T23:57:48+08:00   04d2dc2cf6d1dd85f24c8ecf71fe43e9
+assets/renner-mediumitalic-webfont.woff:
+  development: 2017-11-29T23:57:42+08:00   08b20a04261aee954e49b35aa80e35a9
+assets/renner-mediumitalic-webfont.woff2:
+  development: 2017-11-29T23:57:23+08:00   14c1855008f5489d4bf45c8d48a123d3
+assets/renner.css:
+  development: 2017-11-29T23:57:39+08:00   3f0882496b6ac8566cc777e57b07c54b
 assets/respond-proxy.html:
   development: 2017-11-18T15:56:09+08:00   75002d74a330bff6bf069284da503b4c
 assets/theme.js:
   development: 2017-11-18T15:56:09+08:00   be82faaa7bb4670a3621da96b0262d9e
 assets/theme.scss.liquid:
-  development: 2017-11-26T08:59:21+08:00   e9fa56273f2aad5108c628637a4e7482
+  development: 2017-11-30T00:16:38+08:00   8d8f64668c0e0bd715d9f8c0d9dc68fa
 assets/timber.scss.liquid:
+<<<<<<< HEAD
   development: 2017-11-29T00:13:19+08:00   97210b6fe845f4ca8bea378f0e3891b2
+=======
+  development: 2017-11-30T00:21:24+08:00   41e0cc2fe3e44038df53e6ef7e103889
+>>>>>>> typography
 config/settings_data.json:
-  development: 2017-11-28T22:01:43+08:00   68f84e35341378ea78cd59a8bdddf33e
+  development: 2017-11-29T23:58:22+08:00   fe8f5b683f3abc49443d1e3b2bbaeb7d
 config/settings_schema.json:
-  development: 2017-11-26T09:09:59+08:00   53bd2dfb366c4510bf2f0fd93ce4c723
+  development: 2017-11-29T23:27:50+08:00   0b84b5b18a2764aa9e2e1a9e84213f5f
 layout/password.liquid:
   development: 2017-11-18T15:56:10+08:00   3d2e48bdf438ea5bf937b45c735b8dc8
 layout/theme.liquid:
+<<<<<<< HEAD
   development: 2017-11-28T23:18:26+08:00   da472696e9e8d9c64af84c8caffcb871
+=======
+  development: 2017-11-29T23:58:14+08:00   519f088766d6af6017cb5d5cba4ab515
+>>>>>>> typography
 locales/de.json:
-  development: 2017-11-18T15:56:10+08:00   33b491c4aaba082df97ebf3d352aaad3
+  development: 2017-11-29T23:58:14+08:00   33b491c4aaba082df97ebf3d352aaad3
 locales/en.default.json:
   development: 2017-11-26T09:17:39+08:00   3a53831c13a12d698b32c114365fb2ed
 locales/es.json:
-  development: 2017-11-18T15:56:10+08:00   cb89cd4ebf4cd8757639136ed9d596a9
+  development: 2017-11-29T23:58:03+08:00   cb89cd4ebf4cd8757639136ed9d596a9
 locales/fr.json:
-  development: 2017-11-18T15:56:10+08:00   0fba24b80f4203298b65e23d139828f2
+  development: 2017-11-29T23:58:15+08:00   0fba24b80f4203298b65e23d139828f2
 locales/it.json:
-  development: 2017-11-18T15:56:10+08:00   78e7cd2ce3302bce00ae9f26dce86ba0
+  development: 2017-11-29T23:57:33+08:00   78e7cd2ce3302bce00ae9f26dce86ba0
 locales/ja.json:
-  development: 2017-11-18T15:56:10+08:00   7659cdd123ba700d081f7aa37181be5b
+  development: 2017-11-29T23:57:25+08:00   7659cdd123ba700d081f7aa37181be5b
 locales/pt-BR.json:
-  development: 2017-11-18T15:56:10+08:00   d8e6f309a0c029161bdbfeede9170413
+  development: 2017-11-29T23:57:58+08:00   d8e6f309a0c029161bdbfeede9170413
 locales/pt-PT.json:
-  development: 2017-11-18T15:56:10+08:00   3c235f1ac12904379bb046ded4944c21
+  development: 2017-11-29T23:57:32+08:00   3c235f1ac12904379bb046ded4944c21
 sections/article-template.liquid:
   development: 2017-11-18T15:56:08+08:00   f1dd5566ff0988ce2f9ff22cee0c6d61
 sections/blog-template.liquid:
@@ -78,7 +140,11 @@ sections/featured-product.liquid:
 sections/featured-video.liquid:
   development: 2017-11-18T15:56:08+08:00   8125f658ad90f103df0dd67bed3dff24
 sections/footer.liquid:
+<<<<<<< HEAD
   development: 2017-11-28T23:13:23+08:00   fa3766d8e7aba9a56e1d407e9c69e0a0
+=======
+  development: 2017-11-29T23:57:56+08:00   7f17958271bba6b67974b5157e1c8f4f
+>>>>>>> typography
 sections/gallery.liquid:
   development: 2017-11-18T15:56:08+08:00   7f80796f0eb998f4a032a1ca450b1cf2
 sections/header.liquid:
@@ -86,7 +152,7 @@ sections/header.liquid:
 sections/list-collections-template.liquid:
   development: 2017-11-18T15:56:08+08:00   b218836835163883f8006e98f64831ca
 sections/map.liquid:
-  development: 2017-11-18T15:56:08+08:00   b1168b8b0def6611aa565bf6f6a7bfbf
+  development: 2017-11-29T23:58:10+08:00   b1168b8b0def6611aa565bf6f6a7bfbf
 sections/newsletter.liquid:
   development: 2017-11-18T15:56:08+08:00   5cc3fc586b5480e78b7db7dce6d0aa22
 sections/password-content.liquid:
@@ -114,7 +180,7 @@ snippets/collection-tags.liquid:
 snippets/comment.liquid:
   development: 2017-11-18T15:56:10+08:00   35e507f92f779b5a74b68d9699051d53
 snippets/featured-blog.liquid:
-  development: 2017-11-18T15:56:10+08:00   e6bbd2c8902921c6ce79e37c8d0bdc90
+  development: 2017-11-29T23:57:50+08:00   e6bbd2c8902921c6ce79e37c8d0bdc90
 snippets/google-fonts.liquid:
   development: 2017-11-18T15:56:10+08:00   8e40cfa27425f9a5b955b747e1edee96
 snippets/image-style.liquid:
@@ -152,7 +218,7 @@ snippets/social-meta-tags.liquid:
 snippets/social-sharing.liquid:
   development: 2017-11-18T15:56:10+08:00   50728986de2370a746cdaa2d7497eb10
 snippets/svg-definitions.liquid:
-  development: 2017-11-18T15:56:10+08:00   fe4fbc64d534e355fd8653de4ebac79a
+  development: 2017-11-29T23:57:30+08:00   fe4fbc64d534e355fd8653de4ebac79a
 snippets/tags-article.liquid:
   development: 2017-11-18T15:56:10+08:00   20bac49751d1b57826250dd05fdba854
 templates/404.liquid:

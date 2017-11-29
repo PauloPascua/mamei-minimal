@@ -150,6 +150,21 @@
         "label": "Font",
         "options": [
           {
+            "value": "'Cormorant Garamond', serif",
+            "label": "Cormorant Garamond",
+            "group": "Custom fonts"
+          },
+          {
+            "value": "'Didact Gothic', sans-serif",
+            "label": "Didact Gothic",
+            "group": "Custom fonts"
+          },
+          {
+            "value": "'Gentium Basic', serif",
+            "label": "Gentium Basic",
+            "group": "Custom fonts"
+          },
+          {
             "value": "'Playfair Display', serif",
             "label": "Playfair Display",
             "group": "Custom fonts"
@@ -160,14 +175,14 @@
             "group": "Custom fonts"
           },
           {
-            "value": "'Gentium Basic', serif",
-            "label": "Gentium Basic",
-            "group": "Custom fonts"
+            "value": "Google_Josefin+Sans_400_sans",
+            "label": "Josefin Sans",
+            "group": "Sans-serif | Google Web Fonts"
           },
           {
-            "value": "'Cormorant Garamond', serif",
-            "label": "Cormorant Garamond",
-            "group": "Custom fonts"
+            "value": "Google_Josefin+Sans_700_sans",
+            "label": "Josefin Sans Bold",
+            "group": "Sans-serif | Google Web Fonts"
           },
           {
             "value": "'Forum', cursive",
