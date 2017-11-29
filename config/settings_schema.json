@@ -1126,6 +1126,11 @@
       },
       {
         "type": "text",
+        "id": "social_email_link",
+        "label": "Email"
+      },
+      {
+        "type": "text",
         "id": "social_facebook_link",
         "label": "Facebook",
         "info": "https:\/\/www.facebook.com\/shopify"

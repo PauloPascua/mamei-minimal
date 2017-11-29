@@ -123,6 +123,24 @@
     {% endfor %}
   </div>
 
+  {% comment %} Hard-coded area below main footer menus {% endcomment %}
+  {% if section.settings.social_visible %}
+    <div class="grid-uniform">
+      <div class="grid__item text-center">
+        {% if section.settings.social_is_uppercase %}
+          <span class="uppercase">
+        {% else %}
+          <span>
+        {% endif %}
+        {{ section.settings.custom_social_tag }}<span>
+          {% comment %}
+            Loop through the social network links
+          {% endcomment %}
+          {% include 'social-links' %}
+      </div>
+    </div>
+  {% endif %}
+
   <hr class="hr--small hr--clear">
 
   {% if section.settings.show_methods_of_payment %}
@@ -159,6 +177,22 @@
         "type": "checkbox",
         "id": "show_methods_of_payment",
         "label": "Payment icons"
+      },
+      {
+        "type": "checkbox",
+        "id": "social_visible",
+        "label": "Show social icons"
+      },
+      {
+        "type": "text",
+        "id": "custom_social_tag",
+        "label": "Custom social tagline",
+        "default": "Follow us"
+      },
+      {
+        "type": "checkbox",
+        "id": "social_is_uppercase",
+        "label": "Uppercase"
       }
     ],
     "blocks": [

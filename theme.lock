@@ -6,15 +6,15 @@ assets/gift-card.scss.liquid:
 assets/ico-select.svg.liquid:
   development: 2017-11-18T15:56:09+08:00   c74a0fed2a628d11ab7ec2363d49b230
 assets/icons.eot:
-  development: 2017-11-18T15:56:09+08:00   2bfe8cff1d4976af629171b5f984c2a9
+  development: 2017-11-30T02:49:17+08:00   7b7d98d87cd24ba7d6d3c4e40426e501
 assets/icons.json:
-  development: 2017-11-18T15:56:09+08:00   5958c159d2e41b9af0b34f261899b395
+  development: 2017-11-30T02:49:20+08:00   d1af74dccfb23a3ad602b06552110898
 assets/icons.svg:
-  development: 2017-11-18T15:56:09+08:00   0f8e7e9b9ff62318f787601d71582503
+  development: 2017-11-30T02:49:20+08:00   556bd9077c85799dc3ba979f1de6571b
 assets/icons.ttf:
-  development: 2017-11-18T15:56:09+08:00   c0b2e16fbd76d6f3ae2c0a2be93bb321
+  development: 2017-11-30T02:49:20+08:00   d328ad98cfa33c3fefcab2f7c57fb36e
 assets/icons.woff:
-  development: 2017-11-18T15:56:09+08:00   36c520b9159ce53e971d14910a2ff1cf
+  development: 2017-11-30T02:49:18+08:00   4a8b04bf6b9fd8b8b1c8ba79e43e186a
 assets/jquery-2.2.3.min.js:
   development: 2017-11-18T15:56:09+08:00   33cabfa15c1060aaa3d207c653afb1ee
 assets/lazysizes.min.js:
@@ -28,31 +28,31 @@ assets/theme.js:
 assets/theme.scss.liquid:
   development: 2017-11-30T01:59:47+08:00   c9c128ba06240752f7f5bc1febef4996
 assets/timber.scss.liquid:
-  development: 2017-11-29T00:13:19+08:00   97210b6fe845f4ca8bea378f0e3891b2
+  development: 2017-11-30T02:57:42+08:00   6c6e809fab58e263cd0cb88258eaa1d2
 config/settings_data.json:
-  development: 2017-11-28T22:01:43+08:00   68f84e35341378ea78cd59a8bdddf33e
+  development: 2017-11-30T02:29:06+08:00   6da0527b66c0ec31e97d5e7038742e93
 config/settings_schema.json:
-  development: 2017-11-26T09:09:59+08:00   53bd2dfb366c4510bf2f0fd93ce4c723
+  development: 2017-11-30T02:40:52+08:00   b98d39928d2f783c7341bb18e17eaf50
 layout/password.liquid:
   development: 2017-11-18T15:56:10+08:00   3d2e48bdf438ea5bf937b45c735b8dc8
 layout/theme.liquid:
-  development: 2017-11-28T23:18:26+08:00   da472696e9e8d9c64af84c8caffcb871
+  development: 2017-11-30T00:33:16+08:00   d250d10666185d339bc04010193cca8f
 locales/de.json:
-  development: 2017-11-18T15:56:10+08:00   33b491c4aaba082df97ebf3d352aaad3
+  development: 2017-11-29T23:58:14+08:00   33b491c4aaba082df97ebf3d352aaad3
 locales/en.default.json:
   development: 2017-11-26T09:17:39+08:00   3a53831c13a12d698b32c114365fb2ed
 locales/es.json:
-  development: 2017-11-18T15:56:10+08:00   cb89cd4ebf4cd8757639136ed9d596a9
+  development: 2017-11-29T23:58:03+08:00   cb89cd4ebf4cd8757639136ed9d596a9
 locales/fr.json:
-  development: 2017-11-18T15:56:10+08:00   0fba24b80f4203298b65e23d139828f2
+  development: 2017-11-29T23:58:15+08:00   0fba24b80f4203298b65e23d139828f2
 locales/it.json:
-  development: 2017-11-18T15:56:10+08:00   78e7cd2ce3302bce00ae9f26dce86ba0
+  development: 2017-11-29T23:57:33+08:00   78e7cd2ce3302bce00ae9f26dce86ba0
 locales/ja.json:
-  development: 2017-11-18T15:56:10+08:00   7659cdd123ba700d081f7aa37181be5b
+  development: 2017-11-29T23:57:25+08:00   7659cdd123ba700d081f7aa37181be5b
 locales/pt-BR.json:
-  development: 2017-11-18T15:56:10+08:00   d8e6f309a0c029161bdbfeede9170413
+  development: 2017-11-29T23:57:58+08:00   d8e6f309a0c029161bdbfeede9170413
 locales/pt-PT.json:
-  development: 2017-11-18T15:56:10+08:00   3c235f1ac12904379bb046ded4944c21
+  development: 2017-11-29T23:57:32+08:00   3c235f1ac12904379bb046ded4944c21
 sections/article-template.liquid:
   development: 2017-11-18T15:56:08+08:00   f1dd5566ff0988ce2f9ff22cee0c6d61
 sections/blog-template.liquid:
@@ -78,7 +78,7 @@ sections/featured-product.liquid:
 sections/featured-video.liquid:
   development: 2017-11-18T15:56:08+08:00   8125f658ad90f103df0dd67bed3dff24
 sections/footer.liquid:
-  development: 2017-11-30T02:03:59+08:00   90c4bdbb9d980c6b0709bc4a9640852a
+  development: 2017-11-30T02:32:58+08:00   187af00cff52b4a5be0f952d4fe37c69
 sections/gallery.liquid:
   development: 2017-11-18T15:56:08+08:00   7f80796f0eb998f4a032a1ca450b1cf2
 sections/header.liquid:
@@ -86,7 +86,7 @@ sections/header.liquid:
 sections/list-collections-template.liquid:
   development: 2017-11-18T15:56:08+08:00   b218836835163883f8006e98f64831ca
 sections/map.liquid:
-  development: 2017-11-18T15:56:08+08:00   b1168b8b0def6611aa565bf6f6a7bfbf
+  development: 2017-11-29T23:58:10+08:00   b1168b8b0def6611aa565bf6f6a7bfbf
 sections/newsletter.liquid:
   development: 2017-11-18T15:56:08+08:00   5cc3fc586b5480e78b7db7dce6d0aa22
 sections/password-content.liquid:
@@ -114,7 +114,7 @@ snippets/collection-tags.liquid:
 snippets/comment.liquid:
   development: 2017-11-18T15:56:10+08:00   35e507f92f779b5a74b68d9699051d53
 snippets/featured-blog.liquid:
-  development: 2017-11-18T15:56:10+08:00   e6bbd2c8902921c6ce79e37c8d0bdc90
+  development: 2017-11-29T23:57:50+08:00   e6bbd2c8902921c6ce79e37c8d0bdc90
 snippets/google-fonts.liquid:
   development: 2017-11-18T15:56:10+08:00   8e40cfa27425f9a5b955b747e1edee96
 snippets/image-style.liquid:
@@ -146,13 +146,13 @@ snippets/search-result.liquid:
 snippets/site-nav.liquid:
   development: 2017-11-18T15:56:10+08:00   afdbeba09456a0177ce562610b7e442b
 snippets/social-links.liquid:
-  development: 2017-11-18T15:56:10+08:00   94b779103d80ce313734af90aeccc56e
+  development: 2017-11-30T02:53:25+08:00   65124f7538f30e4427026d4b6d10a1b7
 snippets/social-meta-tags.liquid:
   development: 2017-11-18T15:56:10+08:00   ae9e213401623b2601abf0ace8e21537
 snippets/social-sharing.liquid:
   development: 2017-11-18T15:56:10+08:00   50728986de2370a746cdaa2d7497eb10
 snippets/svg-definitions.liquid:
-  development: 2017-11-18T15:56:10+08:00   fe4fbc64d534e355fd8653de4ebac79a
+  development: 2017-11-29T23:57:30+08:00   fe4fbc64d534e355fd8653de4ebac79a
 snippets/tags-article.liquid:
   development: 2017-11-18T15:56:10+08:00   20bac49751d1b57826250dd05fdba854
 templates/404.liquid:
