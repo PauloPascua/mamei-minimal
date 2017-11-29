@@ -74,7 +74,7 @@
           </div>
 
         {% when 'menu' %}
-          <div class="grid__item {{ column_width }}">
+          <div class="grid__item {{ column_width }} {{ block.settings.menu_alignment }}">
             {% unless num_columns == 1 %}
             <h3 class="h4">{{ block.settings.menu_title | escape }}</h3>
             {% endunless %}
@@ -95,7 +95,7 @@
           </div>
 
         {% when 'text' %}
-          <div class="grid__item {{ column_width }}">
+          <div class="grid__item {{ column_width }} {{ block.settings.text_alignment }}">
             <h3 class="h4">{{ block.settings.title | escape }}</h3>
             <div class="rte">{{ block.settings.richtext }}</div>
           </div>
@@ -112,12 +112,6 @@
   </div>
 
   <hr class="hr--small hr--clear">
-
-  {% comment %} <div class="grid">
-    <div class="grid__item text-center">
-      <p class="site-footer__links">{{ 'layout.footer.copyright' | t }} &copy; {{ 'now' | date: "%Y" }}, {{ shop.name | link_to: '/' }}.</p>
-    </div>
-  </div> {% endcomment %}
 
   {% if section.settings.show_methods_of_payment %}
     {% unless shop.enabled_payment_types == empty %}
@@ -143,14 +137,6 @@
 </div>
 
 </footer>
-
-{% comment %} <div class="wrapper">
-  <div class="grid">
-    <div class="grid__item text-center">
-      <p class="site-footer__links">{{ 'layout.footer.copyright' | t }} &copy; {{ 'now' | date: "%Y" }}, {{ shop.name | link_to: '/' }}.</p>
-    </div>
-  </div>
-</div> {% endcomment %}
 
 {% schema %}
   {
@@ -178,6 +164,16 @@
             "type": "link_list",
             "id": "menu",
             "label": "Menu"
+          },
+          {
+            "type": "select",
+            "id": "menu_alignment",
+            "label": "Choose alignment",
+            "options": [
+              { "value": "align-left", "label": "Left" },
+              { "value": "align-center", "label": "Center"},
+              { "value": "align-right", "label": "Right" }
+            ]
           }
         ]
       },
@@ -195,6 +191,16 @@
             "type": "richtext",
             "id": "richtext",
             "label": "Text"
+          },
+          {
+            "type": "select",
+            "id": "text_alignment",
+            "label": "Choose alignment",
+            "options": [
+              { "value": "align-left", "label": "Left" },
+              { "value": "align-center", "label": "Center"},
+              { "value": "align-right", "label": "Right" }
+            ]
           }
         ]
       },

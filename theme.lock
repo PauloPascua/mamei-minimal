@@ -26,7 +26,7 @@ assets/respond-proxy.html:
 assets/theme.js:
   development: 2017-11-18T15:56:09+08:00   be82faaa7bb4670a3621da96b0262d9e
 assets/theme.scss.liquid:
-  development: 2017-11-26T08:59:21+08:00   e9fa56273f2aad5108c628637a4e7482
+  development: 2017-11-30T01:27:34+08:00   5d19fbf6e43e766ba4c8c4ed6850ff61
 assets/timber.scss.liquid:
   development: 2017-11-29T00:13:19+08:00   97210b6fe845f4ca8bea378f0e3891b2
 config/settings_data.json:
@@ -78,7 +78,7 @@ sections/featured-product.liquid:
 sections/featured-video.liquid:
   development: 2017-11-18T15:56:08+08:00   8125f658ad90f103df0dd67bed3dff24
 sections/footer.liquid:
-  development: 2017-11-28T23:13:23+08:00   fa3766d8e7aba9a56e1d407e9c69e0a0
+  development: 2017-11-30T01:30:56+08:00   5c68d09fe474f73eccdc34ad8c2630e8
 sections/gallery.liquid:
   development: 2017-11-18T15:56:08+08:00   7f80796f0eb998f4a032a1ca450b1cf2
 sections/header.liquid:
