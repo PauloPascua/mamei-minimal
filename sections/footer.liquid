@@ -80,7 +80,13 @@
             {% endunless %}
             <ul class="site-footer__links{% if num_columns == 1 %} inline-list{% endif %}">
               {% for link in linklists[block.settings.menu].links %}
-                <li><a href="{{ link.url }}">{{ link.title }}</a></li>
+                {% if block.settings.menu_is_uppercase %}
+                  <li class="uppercase">
+                {% else %}
+                  <li>
+                {% endif %}
+                    <a href="{{ link.url }}">{{ link.title }}</a>
+                  </li>
               {% endfor %}
             </ul>
           </div>
@@ -97,7 +103,13 @@
         {% when 'text' %}
           <div class="grid__item {{ column_width }} {{ block.settings.text_alignment }}">
             <h3 class="h4">{{ block.settings.title | escape }}</h3>
-            <div class="rte">{{ block.settings.richtext }}</div>
+            {% if block.settings.text_is_uppercase %}
+              <div class="rte uppercase">
+            {% else %}
+              <div class="rte">
+            {% endif %}
+                {{ block.settings.richtext }}
+              </div>
           </div>
 
         {% when 'newsletter' %}
@@ -174,6 +186,11 @@
               { "value": "align-center", "label": "Center"},
               { "value": "align-right", "label": "Right" }
             ]
+          },
+          {
+            "type": "checkbox",
+            "id": "menu_is_uppercase",
+            "label": "Uppercase"
           }
         ]
       },
@@ -201,6 +218,11 @@
               { "value": "align-center", "label": "Center"},
               { "value": "align-right", "label": "Right" }
             ]
+          },
+          {
+            "type": "checkbox",
+            "id": "text_is_uppercase",
+            "label": "Uppercase"
           }
         ]
       },
