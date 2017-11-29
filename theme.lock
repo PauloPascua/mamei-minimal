@@ -30,9 +30,9 @@ assets/theme.scss.liquid:
 assets/timber.scss.liquid:
   development: 2017-11-26T08:58:44+08:00   a29d29f758d391700d8da257276ee8d3
 config/settings_data.json:
-  development: 2017-11-28T22:01:43+08:00   68f84e35341378ea78cd59a8bdddf33e
+  development: 2017-11-29T23:17:24+08:00   fd433a3ffb3a9c061c278adee0a7f450
 config/settings_schema.json:
-  development: 2017-11-26T09:09:59+08:00   53bd2dfb366c4510bf2f0fd93ce4c723
+  development: 2017-11-29T23:27:50+08:00   0b84b5b18a2764aa9e2e1a9e84213f5f
 layout/password.liquid:
   development: 2017-11-18T15:56:10+08:00   3d2e48bdf438ea5bf937b45c735b8dc8
 layout/theme.liquid:
