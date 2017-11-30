@@ -1,17 +1,25 @@
 <ul class="inline-list social-icons">
-  {% if settings.social_twitter_link != blank %}
-    <li>
-      <a class="icon-fallback-text" href="{{ settings.social_twitter_link | escape }}" title="{{ 'layout.footer.social_platform' | t: name: shop.name, platform: 'Twitter' }}">
-        <span class="icon icon-twitter" aria-hidden="true"></span>
-        <span class="fallback-text">Twitter</span>
-      </a>
-    </li>
-  {% endif %}
   {% if settings.social_facebook_link != blank %}
     <li>
       <a class="icon-fallback-text" href="{{ settings.social_facebook_link | escape }}" title="{{ 'layout.footer.social_platform' | t: name: shop.name, platform: 'Facebook' }}">
         <span class="icon icon-facebook" aria-hidden="true"></span>
         <span class="fallback-text">Facebook</span>
+      </a>
+    </li>
+  {% endif %}
+  {% if settings.social_email_link != blank %}
+    <li>
+      <a class="icon-fallback-text" href="{{ settings.social_email_link | escape }}" title="{{ 'layout.footer.social_platform' | t: name: shop.name, platform: 'Email' }}">
+        <span class="icon icon-envelop" aria-hidden="true"></span>
+        <span class="fallback-text">Email</span>
+      </a>
+    </li>
+  {% endif %}
+  {% if settings.social_twitter_link != blank %}
+    <li>
+      <a class="icon-fallback-text" href="{{ settings.social_twitter_link | escape }}" title="{{ 'layout.footer.social_platform' | t: name: shop.name, platform: 'Twitter' }}">
+        <span class="icon icon-twitter" aria-hidden="true"></span>
+        <span class="fallback-text">Twitter</span>
       </a>
     </li>
   {% endif %}

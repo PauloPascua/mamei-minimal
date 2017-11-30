@@ -74,13 +74,19 @@
           </div>
 
         {% when 'menu' %}
-          <div class="grid__item {{ column_width }}">
+          <div class="grid__item {{ column_width }} {{ block.settings.menu_alignment }}">
             {% unless num_columns == 1 %}
             <h3 class="h4">{{ block.settings.menu_title | escape }}</h3>
             {% endunless %}
             <ul class="site-footer__links{% if num_columns == 1 %} inline-list{% endif %}">
               {% for link in linklists[block.settings.menu].links %}
-                <li><a href="{{ link.url }}">{{ link.title }}</a></li>
+                {% if block.settings.menu_is_uppercase %}
+                  <li class="uppercase">
+                {% else %}
+                  <li>
+                {% endif %}
+                    <a href="{{ link.url }}">{{ link.title }}</a>
+                  </li>
               {% endfor %}
             </ul>
           </div>
@@ -95,9 +101,15 @@
           </div>
 
         {% when 'text' %}
-          <div class="grid__item {{ column_width }}">
+          <div class="grid__item {{ column_width }} {{ block.settings.text_alignment }}">
             <h3 class="h4">{{ block.settings.title | escape }}</h3>
-            <div class="rte">{{ block.settings.richtext }}</div>
+            {% if block.settings.text_is_uppercase %}
+              <div class="rte uppercase">
+            {% else %}
+              <div class="rte">
+            {% endif %}
+                {{ block.settings.richtext }}
+              </div>
           </div>
 
         {% when 'newsletter' %}
@@ -111,13 +123,25 @@
     {% endfor %}
   </div>
 
-  <hr class="hr--small hr--clear">
-
-  {% comment %} <div class="grid">
-    <div class="grid__item text-center">
-      <p class="site-footer__links">{{ 'layout.footer.copyright' | t }} &copy; {{ 'now' | date: "%Y" }}, {{ shop.name | link_to: '/' }}.</p>
+  {% comment %} Hard-coded area below main footer menus {% endcomment %}
+  {% if section.settings.social_visible %}
+    <div class="grid-uniform">
+      <div class="grid__item text-center">
+        {% if section.settings.social_is_uppercase %}
+          <span class="uppercase">
+        {% else %}
+          <span>
+        {% endif %}
+        {{ section.settings.custom_social_tag }}<span>
+          {% comment %}
+            Loop through the social network links
+          {% endcomment %}
+          {% include 'social-links' %}
+      </div>
     </div>
-  </div> {% endcomment %}
+  {% endif %}
+
+  <hr class="hr--small hr--clear">
 
   {% if section.settings.show_methods_of_payment %}
     {% unless shop.enabled_payment_types == empty %}
@@ -144,14 +168,6 @@
 
 </footer>
 
-{% comment %} <div class="wrapper">
-  <div class="grid">
-    <div class="grid__item text-center">
-      <p class="site-footer__links">{{ 'layout.footer.copyright' | t }} &copy; {{ 'now' | date: "%Y" }}, {{ shop.name | link_to: '/' }}.</p>
-    </div>
-  </div>
-</div> {% endcomment %}
-
 {% schema %}
   {
     "name": "Footer",
@@ -161,6 +177,22 @@
         "type": "checkbox",
         "id": "show_methods_of_payment",
         "label": "Payment icons"
+      },
+      {
+        "type": "checkbox",
+        "id": "social_visible",
+        "label": "Show social icons"
+      },
+      {
+        "type": "text",
+        "id": "custom_social_tag",
+        "label": "Custom social tagline",
+        "default": "Follow us"
+      },
+      {
+        "type": "checkbox",
+        "id": "social_is_uppercase",
+        "label": "Uppercase"
       }
     ],
     "blocks": [
@@ -178,6 +210,21 @@
             "type": "link_list",
             "id": "menu",
             "label": "Menu"
+          },
+          {
+            "type": "select",
+            "id": "menu_alignment",
+            "label": "Choose alignment",
+            "options": [
+              { "value": "align-left", "label": "Left" },
+              { "value": "align-center", "label": "Center"},
+              { "value": "align-right", "label": "Right" }
+            ]
+          },
+          {
+            "type": "checkbox",
+            "id": "menu_is_uppercase",
+            "label": "Uppercase"
           }
         ]
       },
@@ -195,6 +242,21 @@
             "type": "richtext",
             "id": "richtext",
             "label": "Text"
+          },
+          {
+            "type": "select",
+            "id": "text_alignment",
+            "label": "Choose alignment",
+            "options": [
+              { "value": "align-left", "label": "Left" },
+              { "value": "align-center", "label": "Center"},
+              { "value": "align-right", "label": "Right" }
+            ]
+          },
+          {
+            "type": "checkbox",
+            "id": "text_is_uppercase",
+            "label": "Uppercase"
           }
         ]
       },
