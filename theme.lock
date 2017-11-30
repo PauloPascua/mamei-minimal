@@ -82,11 +82,11 @@ assets/theme.js:
 assets/theme.scss.liquid:
   development: 2017-11-30T01:59:47+08:00   c9c128ba06240752f7f5bc1febef4996
 assets/timber.scss.liquid:
-  development: 2017-11-30T20:53:32+08:00   1710d742e7507d5e50b1f5035be6d1fc
+  development: 2017-11-30T22:50:08+08:00   a36f1d44c628feb40e7e65fdb7521a0a
 config/settings_data.json:
   development: 2017-11-30T13:29:38+08:00   9c1f7063f8ad0bb267fd19b2b09a25ac
 config/settings_schema.json:
-  development: 2017-11-30T02:40:52+08:00   b98d39928d2f783c7341bb18e17eaf50
+  development: 2017-11-30T20:55:41+08:00   63ddb10163759809d27ee95b36bc330a
 layout/password.liquid:
   development: 2017-11-18T15:56:10+08:00   3d2e48bdf438ea5bf937b45c735b8dc8
 layout/theme.liquid:
@@ -94,7 +94,7 @@ layout/theme.liquid:
 locales/de.json:
   development: 2017-11-29T23:58:14+08:00   33b491c4aaba082df97ebf3d352aaad3
 locales/en.default.json:
-  development: 2017-11-26T09:17:39+08:00   3a53831c13a12d698b32c114365fb2ed
+  development: 2017-11-30T22:51:10+08:00   de60c75cda102895cddcfc0348a16e39
 locales/es.json:
   development: 2017-11-29T23:58:03+08:00   cb89cd4ebf4cd8757639136ed9d596a9
 locales/fr.json:
@@ -112,7 +112,7 @@ sections/article-template.liquid:
 sections/blog-template.liquid:
   development: 2017-11-18T15:56:08+08:00   89961bf2f933d63dc1fafe5df2d0fc8d
 sections/cart-template.liquid:
-  development: 2017-11-18T15:56:08+08:00   3e6215f7ee6d5c132b19528dde894db1
+  development: 2017-11-30T22:16:04+08:00   3e6215f7ee6d5c132b19528dde894db1
 sections/collection-list.liquid:
   development: 2017-11-18T15:56:08+08:00   5ce167a04cb4d3216afbe926670ff26b
 sections/collection-template.liquid:
@@ -128,7 +128,7 @@ sections/featured-blog.liquid:
 sections/featured-collection.liquid:
   development: 2017-11-18T15:56:08+08:00   1a39a7d60a60a3e25c8d8278b2c2e83d
 sections/featured-product.liquid:
-  development: 2017-11-18T15:56:08+08:00   c0dd8c36afb540143216aba98b00be05
+  development: 2017-11-30T22:16:06+08:00   c0dd8c36afb540143216aba98b00be05
 sections/featured-video.liquid:
   development: 2017-11-18T15:56:08+08:00   8125f658ad90f103df0dd67bed3dff24
 sections/footer.liquid:
@@ -148,7 +148,7 @@ sections/password-content.liquid:
 sections/password-header.liquid:
   development: 2017-11-18T15:56:08+08:00   139dbe1b79b652043852cc73731d43e4
 sections/product-template.liquid:
-  development: 2017-11-18T15:56:08+08:00   e9a189ee9230410d4093aef1f846ef09
+  development: 2017-11-30T22:25:41+08:00   feb7d6acd6e1360329ee414dd12a7b3d
 sections/rich-text.liquid:
   development: 2017-11-18T15:56:08+08:00   408f02185ca5329eb1a670cf19ea4089
 sections/slider.liquid:
@@ -186,7 +186,7 @@ snippets/onboarding-featured-blog.liquid:
 snippets/pagination-custom.liquid:
   development: 2017-11-18T15:56:10+08:00   13a718c4d2a26a6c5b0a4088feffcdee
 snippets/product-grid-item.liquid:
-  development: 2017-11-18T15:56:10+08:00   c6d04fa50c80dcfa75ba4570139eda64
+  development: 2017-11-30T22:16:05+08:00   c6d04fa50c80dcfa75ba4570139eda64
 snippets/related-products.liquid:
   development: 2017-11-18T15:56:10+08:00   f226f17d078871c7321c506d6f04b71f
 snippets/respond.liquid:
@@ -194,9 +194,9 @@ snippets/respond.liquid:
 snippets/search-bar.liquid:
   development: 2017-11-18T15:56:10+08:00   153f168e799a75157665c273aaee23ea
 snippets/search-result-grid.liquid:
-  development: 2017-11-18T15:56:10+08:00   557927664b63a565d872e261393e3eea
+  development: 2017-11-30T22:16:04+08:00   557927664b63a565d872e261393e3eea
 snippets/search-result.liquid:
-  development: 2017-11-18T15:56:10+08:00   a7aaf8b2944883884a78af472ced5740
+  development: 2017-11-30T22:16:06+08:00   a7aaf8b2944883884a78af472ced5740
 snippets/site-nav.liquid:
   development: 2017-11-18T15:56:10+08:00   afdbeba09456a0177ce562610b7e442b
 snippets/social-links.liquid:
@@ -228,7 +228,7 @@ templates/customers/addresses.liquid:
 templates/customers/login.liquid:
   development: 2017-11-18T15:56:10+08:00   2924330d47e28ff885ab9fab64de7ffb
 templates/customers/order.liquid:
-  development: 2017-11-18T15:56:11+08:00   c3b048af43b566743eadeeba33a15740
+  development: 2017-11-30T22:16:05+08:00   c3b048af43b566743eadeeba33a15740
 templates/customers/register.liquid:
   development: 2017-11-18T15:56:11+08:00   a867faa8369db6f6043803d8db367195
 templates/customers/reset_password.liquid:

@@ -277,6 +277,7 @@ $colorLinkHover: lighten($colorPrimary, 15%);
 
 // Text colors
 $colorTextBody: {{ settings.color_body_text }};
+$colorSecondaryText: lighten($colorTextBody, 10%);
 $colorTopBarText: {{ settings.color_topbar_text }};
 
 // Backgrounds
@@ -2617,13 +2618,21 @@ input.cart__quantity-selector {
   margin-bottom: $gutter;
 }
 
+.product-name {
+  margin-bottom: 0;
+}
+
+.product-selector {
+  text-align: center;
+}
+
 .product-single__prices {
   font-family: 'renner_mediummedium';
   margin-bottom: $gutter / 2;
 }
 
 .product-single__price {
-  color: $colorPrimary;
+  color: $colorSecondaryText;
   font-size: 1.4 * $baseFontSize;
   font-weight: $headerFontWeight;
 }
@@ -2650,8 +2659,16 @@ input.cart__quantity-selector {
 @include at-query($min, $large) {
   .single-option-selector,
   .quantity-selector {
-    width: auto !important;
+    margin: 0.25em auto 1em;
+    {% comment %} width: auto !important; {% endcomment %}
+    width: 50%;
   }
+}
+
+.product-description {
+  text-align: right;
+  color: $colorSecondaryText;
+  font-size: 0.85em;
 }
 
 .tabs {
@@ -2699,6 +2716,13 @@ input.cart__quantity-selector {
   &.is-hidden {
     display: none;
   }
+}
+
+#AddToCart {
+  background-color: black;
+  color: white;
+  width: 100%;
+  padding: 1em;
 }
 
 /*================ Snippet | Product Grid Item ================*/
