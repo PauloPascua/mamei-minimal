@@ -8,11 +8,7 @@ assets/ico-select.svg.liquid:
 assets/icons.eot:
   development: 2017-11-30T02:49:17+08:00   7b7d98d87cd24ba7d6d3c4e40426e501
 assets/icons.json:
-<<<<<<< HEAD
-  development: 2017-11-29T23:58:09+08:00   5958c159d2e41b9af0b34f261899b395
-=======
   development: 2017-11-30T02:49:20+08:00   d1af74dccfb23a3ad602b06552110898
->>>>>>> footer
 assets/icons.svg:
   development: 2017-11-30T02:49:20+08:00   556bd9077c85799dc3ba979f1de6571b
 assets/icons.ttf:
@@ -84,15 +80,6 @@ assets/respond-proxy.html:
 assets/theme.js:
   development: 2017-11-18T15:56:09+08:00   be82faaa7bb4670a3621da96b0262d9e
 assets/theme.scss.liquid:
-<<<<<<< HEAD
-  development: 2017-11-30T00:16:38+08:00   8d8f64668c0e0bd715d9f8c0d9dc68fa
-assets/timber.scss.liquid:
-  development: 2017-11-30T00:31:08+08:00   b9b41b9abbb3fedcad75941de7345c59
-config/settings_data.json:
-  development: 2017-11-30T00:31:37+08:00   fd433a3ffb3a9c061c278adee0a7f450
-config/settings_schema.json:
-  development: 2017-11-29T23:27:50+08:00   0b84b5b18a2764aa9e2e1a9e84213f5f
-=======
   development: 2017-11-30T01:59:47+08:00   c9c128ba06240752f7f5bc1febef4996
 assets/timber.scss.liquid:
   development: 2017-11-30T02:57:42+08:00   6c6e809fab58e263cd0cb88258eaa1d2
@@ -100,7 +87,6 @@ config/settings_data.json:
   development: 2017-11-30T02:29:06+08:00   6da0527b66c0ec31e97d5e7038742e93
 config/settings_schema.json:
   development: 2017-11-30T02:40:52+08:00   b98d39928d2f783c7341bb18e17eaf50
->>>>>>> footer
 layout/password.liquid:
   development: 2017-11-18T15:56:10+08:00   3d2e48bdf438ea5bf937b45c735b8dc8
 layout/theme.liquid:
