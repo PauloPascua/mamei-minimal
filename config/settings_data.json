@@ -27,7 +27,8 @@
     "type_accent_spacing": false,
     "favicon": "",
     "share_image": "",
-    "social_twitter_link": "https:\/\/twitter.com\/mamei",
+    "social_twitter_link": "",
+    "social_email_link": "mamei.jewelry@gmail.com",
     "social_facebook_link": "https:\/\/www.facebook.com\/mamei",
     "social_pinterest_link": "",
     "social_google_plus_link": "",
@@ -82,34 +83,35 @@
           "footer-1": {
             "type": "menu",
             "settings": {
-              "menu_title": "Links",
-              "menu": "footer"
+              "menu_title": "",
+              "menu": "footer",
+              "menu_alignment": "align-left",
+              "menu_is_uppercase": true
             }
-          },
-          "footer-2": {
-            "type": "social",
-            "settings": {}
           },
           "1511803172781": {
             "type": "text",
             "settings": {
-              "title": "Visit our shop",
-              "richtext": "<p>Ateneo de Manila University, Loyola Heights, Quezon City<\/p>\n<p>426 6001<\/p>"
+              "title": "",
+              "richtext": "<p>Visit our shop<\/p>\n<p><\/p>\n<p>Ateneo de Manila University, Loyola Heights, Quezon City<\/p>\n<p>426 6001<\/p>",
+              "text_alignment": "align-right",
+              "text_is_uppercase": true
             }
           }
         },
         "block_order": [
           "footer-1",
-          "footer-2",
           "1511803172781"
         ],
         "settings": {
-          "show_methods_of_payment": false
+          "show_methods_of_payment": false,
+          "social_visible": true,
+          "custom_social_tag": "Stay updated @mamei.jewelry",
+          "social_is_uppercase": true
         }
       },
       "slider": {
         "type": "slider",
-        "disabled": true,
         "blocks": {
           "slider-0": {
             "type": "image",
