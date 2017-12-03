@@ -148,7 +148,7 @@ sections/password-content.liquid:
 sections/password-header.liquid:
   development: 2017-11-18T15:56:08+08:00   139dbe1b79b652043852cc73731d43e4
 sections/product-template.liquid:
-  development: 2017-12-04T00:23:12+08:00   66e60563e85fb2d0564875a80594eb3d
+  development: 2017-12-04T00:03:21+08:00   d56a5ed9a5a2f1766e6bed39f5354413
 sections/rich-text.liquid:
   development: 2017-11-18T15:56:08+08:00   408f02185ca5329eb1a670cf19ea4089
 sections/slider.liquid:
