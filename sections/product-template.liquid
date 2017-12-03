@@ -11,7 +11,23 @@
     <div class="grid product-single__hero">
       <div class="grid__item post-large--one-half">
 
-        {% if section.settings.product_thumbnails_position == 'below' or product.images.size < 2 %}
+        {% comment %} Test slider {% endcomment %}
+        <div class="flexslider">
+          <ul class="slides">
+            {% for image in product.images %}
+              {% capture img_id %}ProductImage-{{ image.id }}{% endcapture %}
+              {% capture img_wrapper_id %}ProductImageWrapper-{{ image.id }}{% endcapture %}
+              {%- assign img_url = image | img_url: '1x1' | replace: '_1x1.', '_2048x.' -%}
+              {% include 'image-style' with image: image, small_style: false, width: 700, height: 1024, wrapper_id: img_wrapper_id, img_id: img_id %}
+
+              <li>
+                <img src="{{ img_url }}" alt="">
+              </li>
+            {% endfor %}
+          </ul>
+        </div>
+
+        {% comment %} {% if section.settings.product_thumbnails_position == 'below' or product.images.size < 2 %}
 
           <div class="product-single__photos">
             {% assign featured_image = product.selected_or_first_available_variant.featured_image | default: product.featured_image %}
@@ -107,7 +123,7 @@
 
           </div>
 
-        {% endif %}
+        {% endif %} {% endcomment %}
 
         {% if section.settings.product_image_zoom_type == 'lightbox' %}
         <ul class="gallery" class="hidden">
