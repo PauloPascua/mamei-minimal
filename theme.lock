@@ -152,7 +152,7 @@ sections/product-template.liquid:
 sections/rich-text.liquid:
   development: 2017-11-18T15:56:08+08:00   408f02185ca5329eb1a670cf19ea4089
 sections/slider.liquid:
-  development: 2017-11-18T15:56:08+08:00   29838de632da1efa369434d77259fa22
+  development: 2017-12-03T18:26:43+08:00   09b822a10e3f65d5f79445cb9c27552c
 snippets/bgset.liquid:
   development: 2017-11-18T15:56:10+08:00   85889bbc39b57621f32fad66317366fc
 snippets/blog-sidebar.liquid:
