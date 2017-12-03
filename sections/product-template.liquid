@@ -117,6 +117,37 @@
         </ul>
         {% endif %}
 
+        {% unless section.settings.show_extra_tab == false or pages[section.settings.extra_tab_content] == empty %}
+            <div class="tabs">
+              <ul class="tab-switch__nav">
+                <li>
+                  {% comment %} <a href="#description" data-link="description" class="tab-switch__trigger h3">{{ 'products.product.description' | t }}</a> {% endcomment %}
+                  <a href="#description" data-link="description" class="tab-switch__trigger h3">Design</a>
+                </li>
+                <li>
+                  {% comment %} <a href="#extra" data-link="extra" class="tab-switch__trigger h3">{{ pages[section.settings.extra_tab_content].title }}</a> {% endcomment %}
+                  <a href="#extra" data-link="extra" class="tab-switch__trigger h3">Materials</a>
+
+                </li>
+              </ul>
+              <div id="description" class="tab-switch__content" data-content="description">
+                <div class="product-description rte" itemprop="description">
+                  {{ product.description }}
+                </div>
+              </div>
+              <div id="extra" class="tab-switch__content" data-content="extra">
+                <div class="product-description rte">
+                  {% comment %} {{ pages[section.settings.extra_tab_content].content }} {% endcomment %}
+                  {{ product.metafields.extra_descriptions.materials }}
+                </div>
+              </div>
+            </div>
+          {% else %}
+            <div class="product-description rte" itemprop="description">
+              {{ product.description }}
+            </div>
+          {% endunless %}
+
       </div>
       <div class="grid__item post-large--one-half product-selector">
         {% if section.settings.product_vendor_enable %}
@@ -172,33 +203,6 @@
               <span id="AddToCartText">{{ 'products.product.add_to_cart' | t }}</span>
             </button>
           </form>
-
-          {% unless section.settings.show_extra_tab == false or pages[section.settings.extra_tab_content] == empty %}
-            <div class="tabs">
-              <ul class="tab-switch__nav">
-                <li>
-                  <a href="#description" data-link="description" class="tab-switch__trigger h3">{{ 'products.product.description' | t }}</a>
-                </li>
-                <li>
-                  <a href="#extra" data-link="extra" class="tab-switch__trigger h3">{{ pages[section.settings.extra_tab_content].title }}</a>
-                </li>
-              </ul>
-              <div id="description" class="tab-switch__content" data-content="description">
-                <div class="product-description rte" itemprop="description">
-                  {{ product.description }}
-                </div>
-              </div>
-              <div id="extra" class="tab-switch__content" data-content="extra">
-                <div class="rte">
-                  {{ pages[section.settings.extra_tab_content].content }}
-                </div>
-              </div>
-            </div>
-          {% else %}
-            <div class="product-description rte" itemprop="description">
-              {{ product.description }}
-            </div>
-          {% endunless %}
 
           {% if section.settings.social_sharing %}
             <hr class="hr--clear hr--small">
