@@ -117,6 +117,7 @@ timber.cacheSelectors = function () {
 timber.init = function () {
   timber.cacheSelectors();
   timber.accessibleNav();
+  timber.shopNav();
   timber.autoResponsiveElements();
 };
 
@@ -196,6 +197,35 @@ timber.accessibleNav = function () {
 
   function removeFocus ($el) {
     $el.removeClass(focusClass);
+  }
+};
+
+timber.shopNav = function () {
+  var $body = timber.cache.$body,
+      $collectionNav = $body.find('.collection-menu');
+  if ($collectionNav.length != 0) {
+    var $collectionLinks = $collectionNav.children('li'),
+        $allTagNavs = $body.find('.tag-menu'),
+        activeClass = 'nav-hover';
+  }
+
+  $collectionLinks.on('mouseenter touchstart', function(evt) {
+    var $el = $(this);
+    var menuText = $el.find('a').text().replace(/\s+/g, '-').toLowerCase();
+
+    if (!$el.hasClass(activeClass)) {
+      evt.preventDefault();
+    }
+
+    showTagMenu(menuText);
+  });
+
+  function showTagMenu(menuText) {
+    // hide everything else first
+    $allTagNavs.hide();
+
+    var $tagMenu = $body.find('ul#' + menuText);
+    $tagMenu.show();
   }
 };
 
@@ -366,7 +396,7 @@ theme.Hero = (function() {
       return(this.$slider.flexslider(this.sliderArgs));
     }
   };
-  
+
   return theme.sliders;
 })();
 
@@ -796,10 +826,10 @@ theme.ListCollections = (function() {
     };
 
     this.$collectionGridImages = $(this.selectors.collectionGridImages, this.$container);
-    
+
     this.init();
   }
-  
+
   ListCollections.prototype = _.assignIn({}, ListCollections.prototype, {
     init: function() {
       theme.cacheSelectors();
@@ -971,10 +1001,10 @@ theme.SlideshowSection.prototype = _.assignIn({}, theme.SlideshowSection.prototy
     var slideIndex = $slide.data('flexslider-index');
     var $slideImg = $slide.find('img');
     $slideshow.flexslider(slideIndex, true);
-    
+
     $slideImg.on('load', function(){
       var intervalAttempts = 0;
-      
+
       // Needed to resize the slider as the on('load') listener doesn't wait until the image has loaded.
       var imageHeightCheck = setInterval(function() {
         intervalAttempts++;
@@ -987,7 +1017,7 @@ theme.SlideshowSection.prototype = _.assignIn({}, theme.SlideshowSection.prototy
         }
       }, 500);
     });
-    
+
     function sizeSlideshow($slideshow) {
       $slideshow.resize();
     }
@@ -1012,7 +1042,7 @@ theme.CollectionList = (function() {
 
     this.init();
   }
-  
+
   CollectionList.prototype = _.assignIn({}, CollectionList.prototype, {
     init: function() {
       theme.cacheSelectors();
@@ -1033,10 +1063,10 @@ theme.FeaturedProducts = (function() {
     };
 
     this.$productGridImages = $(this.selectors.productGridImages, this.$container);
-    
+
     this.init();
   }
-  
+
   FeaturedProducts.prototype = _.assignIn({}, FeaturedProducts.prototype, {
     init: function() {
       theme.cacheSelectors();
@@ -1198,7 +1228,7 @@ theme.PasswordHeader = (function() {
   function PasswordHeader() {
     this.init();
   }
-  
+
   PasswordHeader.prototype = _.assignIn({}, PasswordHeader.prototype, {
     init: function() {
       $('.js-toggle-login-modal').magnificPopup({
@@ -1220,7 +1250,7 @@ theme.PasswordHeader = (function() {
       }
     }
   });
-  
+
   return PasswordHeader;
 })();
 

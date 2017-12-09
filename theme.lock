@@ -78,11 +78,11 @@ assets/renner.css:
 assets/respond-proxy.html:
   development: 2017-11-18T15:56:09+08:00   75002d74a330bff6bf069284da503b4c
 assets/theme.js:
-  development: 2017-11-18T15:56:09+08:00   be82faaa7bb4670a3621da96b0262d9e
+  development: 2017-12-09T15:09:44+08:00   f177cbb5841bea8c8d892ba6d6623742
 assets/theme.scss.liquid:
   development: 2017-11-30T01:59:47+08:00   c9c128ba06240752f7f5bc1febef4996
 assets/timber.scss.liquid:
-  development: 2017-12-03T19:45:18+08:00   2409f268446997639dc2c26cd0634748
+  development: 2017-12-09T15:10:31+08:00   582c5db377622decf60e522d73d3694e
 config/settings_data.json:
   development: 2017-11-30T13:29:38+08:00   9c1f7063f8ad0bb267fd19b2b09a25ac
 config/settings_schema.json:
@@ -90,7 +90,7 @@ config/settings_schema.json:
 layout/password.liquid:
   development: 2017-11-18T15:56:10+08:00   3d2e48bdf438ea5bf937b45c735b8dc8
 layout/theme.liquid:
-  development: 2017-12-03T23:02:41+08:00   60c324112f9861556de5ece6e239375b
+  development: 2017-12-07T01:12:27+08:00   b365ac83eb76524f47fe4be27e30f85a
 locales/de.json:
   development: 2017-11-29T23:58:14+08:00   33b491c4aaba082df97ebf3d352aaad3
 locales/en.default.json:
@@ -249,6 +249,8 @@ templates/page.liquid:
   development: 2017-11-18T15:56:11+08:00   920ebc6f5bbe5203ece5b8a6b1e66488
 templates/page.no-heading.liquid:
   development: 2017-11-18T15:56:11+08:00   1217ebf3d69892fe813368050dfa6629
+templates/page.shop-now-no-heading.liquid:
+  development: 2017-12-09T15:07:35+08:00   68e2513d75da1c7cce402d41e72bbecf
 templates/password.liquid:
   development: 2017-11-18T15:56:11+08:00   27c20529a5fa11780bc067f4f5c7cc9d
 templates/product.liquid:
