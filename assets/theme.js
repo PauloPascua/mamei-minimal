@@ -206,6 +206,7 @@ timber.shopNav = function () {
   if ($collectionNav.length != 0) {
     var $collectionLinks = $collectionNav.children('li'),
         $allTagNavs = $body.find('.tag-menu'),
+        $allSliders = $body.find('.shop-now-slider'),
         activeClass = 'nav-hover';
   }
 
@@ -218,14 +219,22 @@ timber.shopNav = function () {
     }
 
     showTagMenu(menuText);
+    showSlider(menuText);
   });
+
+  function showSlider(menuText) {
+    $allSliders.hide();
+
+    var $slider = $body.find('div.shop-now-slider#' + menuText);
+    $slider.fadeIn();
+  }
 
   function showTagMenu(menuText) {
     // hide everything else first
     $allTagNavs.hide();
 
     var $tagMenu = $body.find('ul#' + menuText);
-    $tagMenu.show();
+    $tagMenu.fadeIn();
   }
 };
 

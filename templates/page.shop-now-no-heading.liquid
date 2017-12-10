@@ -1,20 +1,28 @@
 <div class="grid">
 
-  <div class="grid__item post-large--two-thirds push--post-large--one-sixth">
+  <div class="grid__item post-large--ten-twelfths push--post-large--one-twelfth">
 
     <div class="rte">
       {{ page.content }}
 
       <div class="grid">
         <div class="grid__item large--one-quarter">
-          <h3 style="float: right;">Jewellery</h3>
+          <h3 style="float: right;">JEWELLERY</h3>
           {% for link in linklists.collections.links %}
             {% assign child_list_handle = link.title | handleize %}
             {% if linklists[child_list_handle].links != blank %}
-              <ul id="{{ link.title | replace: ' ', '-' | downcase }}" class="tag-menu" style="list-style: none; float: right; text-align: right";>
+              <ul id="{{ link.title | replace: ' ', '-' | downcase }}" class="tag-menu">
                 {% for childlink in linklists[child_list_handle].links %}
                   <li>
                     <a href="{{ childlink.url }}">{{ childlink.title | escape }}</a>
+                  </li>
+                {% endfor %}
+              </ul>
+            {% else %}
+              <ul id="all-products" class="tag-menu">
+                {% for tag in collections['all'].tags %}
+                  <li>
+                    <a href="{{ collections['all'].url }}/{{ tag | handle }}">{{ tag | handle }}</a>
                   </li>
                 {% endfor %}
               </ul>
@@ -22,23 +30,61 @@
           {% endfor %}
         </div>
         <div class="grid__item large--one-half">
-          <p>slideshow</p>
+          <div id="all"  class="flexslider shop-now-slider">
+            <ul class="slides">
+              {% for product in collections['all'].products %}
+                {% assign image = product.images[0] %}
+
+                {% capture img_id %}ProductImage-{{ image.id }}{% endcapture %}
+                {% capture img_wrapper_id %}ProductImageWrapper-{{ image.id }}{% endcapture %}
+                {%- assign img_url = image | img_url: '1x1' | replace: '_1x1.', '_2048x.' -%}
+                {% include 'image-style' with image: image, small_style: false, width: 700, height: 1024, wrapper_id: img_wrapper_id, img_id: img_id %}
+
+                <li>
+                  <img src="{{ img_url }}" alt="">
+                </li>
+              {% endfor %}
+            </ul>
+          </div>
+          {% for link in linklists.collections.links %}
+            {% if link.type == 'collection_link' %}
+              {% assign collection = link.object %}
+              {% unless collection.products.count < 1 %}
+                <div id="{{ link.title | replace: ' ', '-' | downcase }}"  class="flexslider shop-now-slider">
+                  <ul class="slides">
+                    {% for product in collection.products %}
+                      {% assign image = product.images[0] %}
+
+                      {% capture img_id %}ProductImage-{{ image.id }}{% endcapture %}
+                      {% capture img_wrapper_id %}ProductImageWrapper-{{ image.id }}{% endcapture %}
+                      {%- assign img_url = image | img_url: '1x1' | replace: '_1x1.', '_2048x.' -%}
+                      {% include 'image-style' with image: image, small_style: false, width: 700, height: 1024, wrapper_id: img_wrapper_id, img_id: img_id %}
+
+                      <li>
+                        <img src="{{ img_url }}" alt="">
+                      </li>
+                    {% endfor %}
+                  </ul>
+                </div>
+              {% endunless %}
+            {% endif %}
+          {% endfor %}
         </div>
         <div class="grid__item large--one-quarter">
-          <h3>Collection</h3>
+          <h3>COLLECTION</h3>
           <ul class="collection-menu" style="list-style: none; margin-left: 0;">
             {% for link in linklists.collections.links %}
               {% assign child_list_handle = link.title | handleize %}
-              <li {% if linklists[child_list_handle].links != blank %}class="shop-nav--has-dropdown"{% endif %}>
+              {% assign collection_name = link.title | replace: ' ', '-' | downcase %}
+              <li class="{% if linklists[child_list_handle].links != blank %}
+                            shop-nav--has-dropdown
+                         {% endif %} {{ collection_name | append: '_collection_link' }}">
                 {{ link.title | link_to: link.url }}
               </li>
             {% endfor %}
           </ul>
         </div>
       </div>
-
     </div>
-
   </div>
-
 </div>

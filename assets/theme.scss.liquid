@@ -2657,3 +2657,61 @@ input[type="submit"].password-page__signup-form__submit {
 .grid-link__title {
   font-weight: 400;
 }
+
+/*===== Shop Now =====*/
+
+.shop-now-slider img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.shop-now-slider {
+  display: none;
+}
+
+.shop-now-slider#all {
+  display: block;
+}
+
+ul#all-products {
+  display: block;
+}
+
+.tag-menu {
+  display: none;
+}
+
+ul.collection-menu,
+ul.tag-menu {
+  list-style: none;
+}
+
+ul.tag-menu {
+  float: right;
+  text-align: right;
+}
+
+.collection-menu li,
+.tag-menu li {
+  margin-bottom: 0;
+}
+
+.collection-menu li>a,
+.tag-menu li>a {
+  text-transform: uppercase;
+  color: $colorTextBody;
+  font-size: 1.375em;
+  font-family: 'renner_mediummedium';
+}
+
+li.bridal_collection_link a {
+  {% comment %} Dark red {% endcomment %}
+  color: #560705;
+}
+
+li.au_collection_link a {
+  {% comment %} Gold {% endcomment %}
+  color: #a37511
+}
