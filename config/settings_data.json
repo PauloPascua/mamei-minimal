@@ -200,8 +200,8 @@
           "vendor_enable": false,
           "show_sale_circle": true,
           "show_sold_out_circle": true,
-          "sort_enable": true,
-          "tags_enable": true,
+          "sort_enable": false,
+          "tags_enable": false,
           "center_grid_link": false
         }
       },
