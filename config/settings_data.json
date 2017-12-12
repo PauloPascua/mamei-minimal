@@ -116,29 +116,45 @@
           "slider-0": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/NDF6838-edit-2.jpg",
+              "image": "shopify:\/\/shop_images\/slideshow2-1280x720.jpg",
               "link": ""
             }
           },
           "slider-1": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/NDF6629-edit-2.jpg",
+              "image": "shopify:\/\/shop_images\/slideshow1-1280x720.jpg",
               "link": ""
             }
           },
           "slider-2": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/NDF6677-edit.jpg",
+              "image": "shopify:\/\/shop_images\/slideshow4-1280x720.jpg",
+              "link": ""
+            }
+          },
+          "1513092109511": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/slideshow5-1280x720.jpg",
+              "link": ""
+            }
+          },
+          "1513092114279": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/slideshow6-1280x720.jpg",
               "link": ""
             }
           }
         },
         "block_order": [
-          "slider-0",
           "slider-1",
-          "slider-2"
+          "slider-0",
+          "slider-2",
+          "1513092109511",
+          "1513092114279"
         ],
         "settings": {
           "slider_home_auto": true,
