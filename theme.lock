@@ -82,7 +82,7 @@ assets/theme.js:
 assets/theme.scss.liquid:
   development: 2017-12-10T20:21:57+08:00   a8c4c04572e5d3b9df7e0eb511eac3ee
 assets/timber.scss.liquid:
-  development: 2017-12-10T20:21:56+08:00   cd5e793cd9c232c60283acb0d39d3da2
+  development: 2017-12-15T02:07:47+08:00   4c9407b113e0a63a1a154971bf7784c0
 config/settings_data.json:
   development: 2017-12-12T00:04:53+08:00   553a9640c13b0eb9c5a013f30033f89e
 config/settings_schema.json:
@@ -136,7 +136,7 @@ sections/footer.liquid:
 sections/gallery.liquid:
   development: 2017-11-18T15:56:08+08:00   7f80796f0eb998f4a032a1ca450b1cf2
 sections/header.liquid:
-  development: 2017-11-30T13:02:15+08:00   8eee9ee5bc8e7df4e6c4e861f306b61c
+  development: 2017-12-15T02:04:50+08:00   035fdf1bafce74ad62f7b5603fea4d4c
 sections/list-collections-template.liquid:
   development: 2017-11-18T15:56:08+08:00   b218836835163883f8006e98f64831ca
 sections/map.liquid:
@@ -198,7 +198,7 @@ snippets/search-result-grid.liquid:
 snippets/search-result.liquid:
   development: 2017-11-30T22:16:06+08:00   a7aaf8b2944883884a78af472ced5740
 snippets/site-nav.liquid:
-  development: 2017-11-18T15:56:10+08:00   afdbeba09456a0177ce562610b7e442b
+  development: 2017-12-15T02:05:53+08:00   6b33df2fb4c4306ec6681b8cf6500d30
 snippets/social-links.liquid:
   development: 2017-11-30T02:53:25+08:00   65124f7538f30e4427026d4b6d10a1b7
 snippets/social-meta-tags.liquid:

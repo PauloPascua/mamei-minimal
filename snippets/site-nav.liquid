@@ -36,3 +36,11 @@
     {% endif %}
   {% endfor %}
 </ul>
+<ul class="matter-nav" role="navigation" id="MatterNav">
+  {% for link in linklists.matter.links %}
+   {% comment %} <li>{{ link.title | link_to: link.url }}</li> {% endcomment %}
+   <li {% if link.active %}class="matter-nav--active"{% endif %}>
+    <a href="{{ link.url }}" class="matter-nav__link">{{ link.title }}</a>
+   </li>
+  {% endfor %}
+</ul>

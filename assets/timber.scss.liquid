@@ -2242,7 +2242,8 @@ $socialIconFontStack: 'icons';
 }
 
 /*================ Module | Site Nav and Dropdowns ================*/
-.site-nav {
+.site-nav,
+.matter-nav {
   @include accentFontStack;
   cursor: default;
   margin: 0 auto;
@@ -2271,7 +2272,8 @@ $socialIconFontStack: 'icons';
   }
 }
 
-.site-nav__link {
+.site-nav__link,
+.matter-nav__link {
   display: block;
   text-decoration: none;
   padding: $gutter / 2;
@@ -2284,7 +2286,8 @@ $socialIconFontStack: 'icons';
     color: $colorPrimary;
   }
 
-  .site-nav--active & {
+  .site-nav--active &,
+  .matter-nav--active & {
     font-weight: bold;
   }
 
@@ -2313,7 +2316,8 @@ $socialIconFontStack: 'icons';
     display: block;
   }
 
-  .site-nav__link {
+  .site-nav__link,
+  .matter-nav__link {
     background-color: $colorBody;
     font-weight: normal;
     padding: 7px 20px 7px 15px;
@@ -2917,4 +2921,10 @@ ul.flex-direction-nav .flex-next { right: 20px; }
   img {
     display: block;
   }
+}
+
+/*================ Matter ================*/
+.matter-nav__link {
+  padding: 0;
+  color: #560705;
 }
