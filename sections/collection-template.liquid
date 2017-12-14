@@ -1,12 +1,8 @@
 {% paginate collection.products by 20 %}
 
 <div id="CollectionSection" data-section-id="{{ section.id }}" data-section-type="collection-template" data-sort-enabled="{{ section.settings.sort_enable }}" data-tags-enabled="{{ section.settings.tags_enable }}">
-  <div class="section-header section-header--breadcrumb">
-    {% include 'breadcrumb' %}
-  </div>
-
   <header class="section-header section-header--large">
-    <h1 class="section-header__title{% if section.settings.tags_enable or section.settings.sort_enable %} section-header__title--left{% endif %}">{{ collection.title }}</h1>
+    {% comment %} <h1 class="section-header__title{% if section.settings.tags_enable or section.settings.sort_enable %} section-header__title--left{% endif %}">{{ collection.title }}</h1> {% endcomment %}
     {% if section.settings.tags_enable or section.settings.sort_enable %}
     <div class="section-header__link--right">
       {% if section.settings.tags_enable %}
@@ -18,13 +14,6 @@
     </div>
     {% endif %}
   </header>
-
-  {% if collection.description != blank %}
-    <div class="rte rte--header">
-      {{ collection.description }}
-    </div>
-    <hr class="hr--clear hr--small">
-  {% endif %}
 
   <div class="grid-uniform grid-link__container">
     {% assign grid_item_width = 'wide--one-third large--one-third medium-down--one-half' %}
@@ -69,6 +58,13 @@
     {% endfor %}
 
   </div>
+  {% if collection.description != blank %}
+    <div class="rte rte--header">
+      {{ collection.description }}
+    </div>
+    <hr class="hr--clear hr--small">
+  {% endif %}
+
 
   {% if paginate.pages > 1 %}
     <hr class="hr--clear">
