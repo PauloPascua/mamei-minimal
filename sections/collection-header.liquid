@@ -1,0 +1,228 @@
+<style>
+  {%- assign logo_width = 695 -%}
+  {%- assign collection_logo_max_width = section.settings.collection_logo_max_width | times: 1 -%}
+  {% if collection_logo_max_width < logo_width %}
+    {%- assign logo_width = collection_logo_max_width -%}
+  {% endif %}
+  .logo__image-wrapper {
+    max-width: {{ logo_width }}px;
+  }
+
+  .site-nav {
+    border-top: 2.75px solid #85878c;
+    border-bottom: 2.75px solid #85878c;
+  }
+
+  .logo__image-wrapper {
+    margin: 0 auto;
+  }
+
+</style>
+
+<div data-section-id="{{ section.id }}" data-section-type="header-section">
+  <div class="header-bar">
+    <div class="wrapper medium-down--hide">
+      <div class="post-large--display-table">
+
+        {% if section.settings.collection_header_show_announcement or section.settings.collection_header_search_enable %}
+          <div class="header-bar__left post-large--display-table-cell">
+
+            {% comment %}
+              Add social links to header
+            {% endcomment %}
+
+            {% comment %}
+            <div class="header-bar__module header-bar__module--list">
+              {% include 'social-links' %}
+            </div>
+            {% endcomment %}
+
+            {% if section.settings.collection_header_show_announcement %}
+              <div class="header-bar__module header-bar__message">
+                {% if section.settings.collection_header_announcement_link != blank %}
+                  <a href="{{ section.settings.collection_header_announcement_link }}">
+                {% endif %}
+                  {{ section.settings.collection_header_text | escape }}
+                {% if section.settings.collection_header_announcement_link != blank %}
+                  </a>
+                {% endif %}
+              </div>
+            {% elsif section.settings.collection_header_search_enable %}
+              <div class="header-bar__module header-bar__search">
+                {% include 'search-bar' with 'header' %}
+              </div>
+            {% endif %}
+
+          </div>
+        {% endif %}
+
+        <div class="header-bar__right post-large--display-table-cell">
+
+          {% if shop.customer_accounts_enabled %}
+            <ul class="header-bar__module header-bar__module--list">
+              {% if customer %}
+                <li>
+                  <a href="/account">{{ 'layout.customer.account' | t }}</a>
+                </li>
+                <li>
+                  {{ 'layout.customer.log_out' | t | customer_logout_link }}
+                </li>
+              {% else %}
+                <li>
+                  {{ 'layout.customer.log_in' | t | customer_login_link }}
+                </li>
+                <li>{{ 'layout.customer.or' | t }}</li>
+                <li>
+                  {{ 'layout.customer.create_account' | t | customer_register_link }}
+                </li>
+              {% endif %}
+            </ul>
+          {% endif %}
+
+          <div class="header-bar__module">
+            <span class="header-bar__sep" aria-hidden="true"></span>
+            <a href="/cart" class="cart-page-link">
+              <span class="icon icon-cart header-bar__cart-icon" aria-hidden="true"></span>
+            </a>
+          </div>
+
+          <div class="header-bar__module">
+            <a href="/cart" class="cart-page-link">
+              {{ 'layout.cart.title' | t }}{% unless cart.item_count == 0 %}:{% endunless %}
+              <span class="cart-count header-bar__cart-count{% if cart.item_count == 0 %} hidden-count{% endif %}">{{ cart.item_count }}</span>
+            </a>
+          </div>
+
+          {% if section.settings.collection_header_search_enable %}
+            {% if section.settings.collection_header_show_announcement %}
+              <div class="header-bar__module header-bar__search">
+                {% include 'search-bar' with 'header' %}
+              </div>
+            {% endif %}
+          {% endif %}
+
+        </div>
+      </div>
+    </div>
+
+    <div class="wrapper post-large--hide announcement-bar--mobile">
+      {% if section.settings.collection_header_show_announcement %}
+        {% if section.settings.collection_header_announcement_link != blank %}
+          <a href="{{ section.settings.collection_header_announcement_link }}">
+        {% endif %}
+          <span>{{ section.settings.collection_header_text | escape }}</span>
+        {% if section.settings.collection_header_announcement_link != blank %}
+          </a>
+        {% endif %}
+      {% endif %}
+    </div>
+
+    <div class="wrapper post-large--hide">
+      {% unless section.settings.collection_nav_menu == blank and section.settings.collection_header_search_enable == false and shop.customer_accounts_enabled == false %}
+        <button type="button" class="mobile-nav-trigger" id="MobileNavTrigger" data-menu-state="close">
+          <span class="icon icon-hamburger" aria-hidden="true"></span>
+          {{ 'layout.navigation.menu' | t }}
+        </button>
+      {% endunless %}
+      <a href="/cart" class="cart-page-link mobile-cart-page-link">
+        <span class="icon icon-cart header-bar__cart-icon" aria-hidden="true"></span>
+        {{ 'layout.cart.title' | t }} <span class="cart-count{% if cart.item_count == 0 %} hidden-count{% endif %}">{{ cart.item_count }}</span>
+      </a>
+    </div>
+    {% include 'mobile-nav' with linklists[section.settings.collection_nav_menu] %}
+  </div>
+
+  <header class="site-header" role="banner">
+    <div class="wrapper">
+      <div class="grid--full">
+        <div class="grid__item">
+          <h1 class="site-header__logo" itemscope itemtype="http://schema.org/Organization">
+            <noscript>
+              {% capture image_size %}{{ logo_width | escape }}x{% endcapture %}
+              <div class="logo__image-wrapper">
+                {{ section.settings.collection_header_logo | img_url: image_size | img_tag: shop.name }}
+              </div>
+            </noscript>
+            <div class="logo__image-wrapper supports-js">
+              <a href="/" itemprop="url" style="padding-top:{{ 1 | divided_by: section.settings.collection_header_logo.aspect_ratio | times: 100}}%;">
+                {% assign img_url = section.settings.collection_header_logo | img_url: '1x1' | replace: '_1x1.', '_{width}x.' %}
+                <img class="logo__image lazyload"
+                      src="{{ section.settings.collection_header_logo | img_url: '300x300' }}"
+                      data-src="{{ img_url }}"
+                      data-widths="[120, 180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 1944, 2048]"
+                      data-aspectratio="{{ section.settings.collection_header_logo.aspect_ratio }}"
+                      data-sizes="auto"
+                      alt="{{ shop.name | escape }}"
+                      itemprop="logo">
+              </a>
+            </div>
+          </h1>
+          <h1 class="collection-header-title {{ collection.title | replace: ' ', '-' | downcase }}">
+            {{ collection.title }}
+          </h1>
+        </div>
+      </div>
+      <div class="grid--full medium-down--hide">
+        <div class="grid__item">
+          {% include 'site-nav' with linklists[section.settings.collection_nav_menu] %}
+        </div>
+      </div>
+    </div>
+  </header>
+</div>
+
+{% schema %}
+  {
+    "name": "Collection Header",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "collection_header_search_enable",
+        "label": "Show search bar"
+      },
+      {
+        "type": "image_picker",
+        "id": "collection_header_logo",
+        "label": "Logo",
+        "info": "450 x 200px recommended"
+      },
+      {
+        "type": "text",
+        "id": "collection_logo_max_width",
+        "label": "Custom logo width (in pixels)",
+        "default": "450"
+      },
+      {
+        "type": "header",
+        "content": "Main menu"
+      },
+      {
+        "type": "link_list",
+        "id": "collection_nav_menu",
+        "label": "Menu",
+        "default": "main-menu"
+      },
+      {
+        "type": "header",
+        "content": "Announcement bar"
+      },
+      {
+        "type": "checkbox",
+        "id": "collection_header_show_announcement",
+        "label": "Show announcement",
+        "default": false
+      },
+      {
+        "type": "text",
+        "id": "collection_header_text",
+        "label": "Announcement text"
+      },
+      {
+        "type": "url",
+        "id": "collection_header_announcement_link",
+        "label": "Announcement link",
+        "info": "Optional"
+      }
+    ]
+  }
+{% endschema %}
