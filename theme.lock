@@ -198,7 +198,7 @@ snippets/search-result-grid.liquid:
 snippets/search-result.liquid:
   development: 2017-11-30T22:16:06+08:00   a7aaf8b2944883884a78af472ced5740
 snippets/site-nav.liquid:
-  development: 2017-12-15T02:05:53+08:00   6b33df2fb4c4306ec6681b8cf6500d30
+  development: 2017-12-15T02:14:20+08:00   81179704b036a33da588862540d27b94
 snippets/social-links.liquid:
   development: 2017-11-30T02:53:25+08:00   65124f7538f30e4427026d4b6d10a1b7
 snippets/social-meta-tags.liquid:
