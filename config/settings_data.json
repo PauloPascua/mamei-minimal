@@ -300,6 +300,8 @@
           "collection_header_logo": "shopify:\/\/shop_images\/logo-cropped.png",
           "collection_logo_max_width": "450",
           "collection_nav_menu": "tags-default",
+          "bridal_menu": "bridal-menu",
+          "bridal_submenu": "bridal-submenu",
           "collection_header_show_announcement": false,
           "collection_header_text": "",
           "collection_header_announcement_link": ""
